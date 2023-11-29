@@ -1,0 +1,3 @@
+C:/Users/Rate/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/communicate.dir
+C:/Users/Rate/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Rate/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/rebuild_cache.dir
