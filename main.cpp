@@ -1,6 +1,7 @@
 #include <iostream>
-#include "portaudio/include/portaudio.h"
+#include "portaudio.h"
 #include <vector>
+#include "SDL.h"
 
 #define SAMPLE_RATE (44100)
 #define FRAMES_PER_BUFFER (64)
