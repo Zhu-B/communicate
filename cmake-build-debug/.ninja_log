@@ -1,4 +1,5 @@
 # ninja log v5
-0	195	7230025743390814	CMakeFiles/communicate.dir/main.cpp.obj	be8b860dbc175238
-196	265	7230025744069179	communicate.exe	9b9b1dfb3d806740
-2	215	7230061200696933	CMakeFiles/communicate.dir/main.cpp.obj	be8b860dbc175238
+1	200	7230160742068523	CMakeFiles/communicate.dir/main.cpp.obj	be8b860dbc175238
+200	268	7230160742711540	communicate.exe	9b9b1dfb3d806740
+0	87	7230816741949935	build.ninja	88a694f5f18a440a
+1	120	7230816741949935	build.ninja	88a694f5f18a440a
