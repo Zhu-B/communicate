@@ -1,0 +1,1379 @@
+Performing C SOURCE FILE Test HAVE_GCC_PREFERRED_STACK_BOUNDARY failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4ff47/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4ff47.dir/build.make CMakeFiles/cmTC_4ff47.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4ff47.dir/src.c.o
+/usr/bin/cc -DHAVE_GCC_PREFERRED_STACK_BOUNDARY  -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos" -mpreferred-stack-boundary=2 -o CMakeFiles/cmTC_4ff47.dir/src.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+cc1: error: ‘-mpreferred-stack-boundary=2’ is not between 3 and 12
+gmake[1]: *** [CMakeFiles/cmTC_4ff47.dir/build.make:78: CMakeFiles/cmTC_4ff47.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_4ff47/fast] Error 2
+
+
+Source file was:
+int x = 0; int main(int argc, char **argv) {}
+Performing C SOURCE FILE Test HAVE_ALTIVEC_H_HDR failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a6d18/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a6d18.dir/build.make CMakeFiles/cmTC_a6d18.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a6d18.dir/src.c.o
+/usr/bin/cc -DHAVE_ALTIVEC_H_HDR  -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos" -maltivec -o CMakeFiles/cmTC_a6d18.dir/src.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command-line option ‘-maltivec’
+gmake[1]: *** [CMakeFiles/cmTC_a6d18.dir/build.make:78: CMakeFiles/cmTC_a6d18.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_a6d18/fast] Error 2
+
+
+Source file was:
+
+          #include <altivec.h>
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Performing C SOURCE FILE Test HAVE_ALTIVEC failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3a550/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3a550.dir/build.make CMakeFiles/cmTC_3a550.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3a550.dir/src.c.o
+/usr/bin/cc -DHAVE_ALTIVEC  -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos" -maltivec -o CMakeFiles/cmTC_3a550.dir/src.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command-line option ‘-maltivec’
+gmake[1]: *** [CMakeFiles/cmTC_3a550.dir/build.make:78: CMakeFiles/cmTC_3a550.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_3a550/fast] Error 2
+
+
+Source file was:
+
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Determining if the include file libunwind.h exists failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_17ddf/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_17ddf.dir/build.make CMakeFiles/cmTC_17ddf.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_17ddf.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_17ddf.dir/CheckIncludeFile.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: libunwind.h: No such file or directory
+    1 | #include <libunwind.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_17ddf.dir/build.make:78: CMakeFiles/cmTC_17ddf.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_17ddf/fast] Error 2
+
+
+
+Determining if the strlcpy exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a2f13/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a2f13.dir/build.make CMakeFiles/cmTC_a2f13.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a2f13.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_a2f13.dir/CheckSymbolExists.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘strlcpy’ undeclared (first use in this function); did you mean ‘strncpy’?
+   14 |   return ((int*)(&strlcpy))[argc];
+      |                   ^~~~~~~
+      |                   strncpy
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_a2f13.dir/build.make:78: CMakeFiles/cmTC_a2f13.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_a2f13/fast] Error 2
+
+
+File /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcpy
+  return ((int*)(&strlcpy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strlcat exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0c7d7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0c7d7.dir/build.make CMakeFiles/cmTC_0c7d7.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0c7d7.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_0c7d7.dir/CheckSymbolExists.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘strlcat’ undeclared (first use in this function); did you mean ‘strncat’?
+   14 |   return ((int*)(&strlcat))[argc];
+      |                   ^~~~~~~
+      |                   strncat
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_0c7d7.dir/build.make:78: CMakeFiles/cmTC_0c7d7.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_0c7d7/fast] Error 2
+
+
+File /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcat
+  return ((int*)(&strlcat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strrev exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_305eb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_305eb.dir/build.make CMakeFiles/cmTC_305eb.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_305eb.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_305eb.dir/CheckSymbolExists.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_strrev’ undeclared (first use in this function)
+   14 |   return ((int*)(&_strrev))[argc];
+      |                   ^~~~~~~
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_305eb.dir/build.make:78: CMakeFiles/cmTC_305eb.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_305eb/fast] Error 2
+
+
+File /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strrev
+  return ((int*)(&_strrev))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strupr exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_54d77/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_54d77.dir/build.make CMakeFiles/cmTC_54d77.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_54d77.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_54d77.dir/CheckSymbolExists.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_strupr’ undeclared (first use in this function)
+   14 |   return ((int*)(&_strupr))[argc];
+      |                   ^~~~~~~
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_54d77.dir/build.make:78: CMakeFiles/cmTC_54d77.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_54d77/fast] Error 2
+
+
+File /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strupr
+  return ((int*)(&_strupr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strlwr exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_402f2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_402f2.dir/build.make CMakeFiles/cmTC_402f2.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_402f2.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_402f2.dir/CheckSymbolExists.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_strlwr’ undeclared (first use in this function)
+   14 |   return ((int*)(&_strlwr))[argc];
+      |                   ^~~~~~~
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_402f2.dir/build.make:78: CMakeFiles/cmTC_402f2.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_402f2/fast] Error 2
+
+
+File /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strlwr
+  return ((int*)(&_strlwr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the itoa exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e486d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e486d.dir/build.make CMakeFiles/cmTC_e486d.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e486d.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_e486d.dir/CheckSymbolExists.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘itoa’ undeclared (first use in this function)
+   14 |   return ((int*)(&itoa))[argc];
+      |                   ^~~~
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_e486d.dir/build.make:78: CMakeFiles/cmTC_e486d.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_e486d/fast] Error 2
+
+
+File /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef itoa
+  return ((int*)(&itoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _ltoa exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d27dd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d27dd.dir/build.make CMakeFiles/cmTC_d27dd.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d27dd.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_d27dd.dir/CheckSymbolExists.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_ltoa’ undeclared (first use in this function)
+   14 |   return ((int*)(&_ltoa))[argc];
+      |                   ^~~~~
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_d27dd.dir/build.make:78: CMakeFiles/cmTC_d27dd.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_d27dd/fast] Error 2
+
+
+File /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _ltoa
+  return ((int*)(&_ltoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _uitoa exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e2b94/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e2b94.dir/build.make CMakeFiles/cmTC_e2b94.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e2b94.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_e2b94.dir/CheckSymbolExists.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_uitoa’ undeclared (first use in this function)
+   14 |   return ((int*)(&_uitoa))[argc];
+      |                   ^~~~~~
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_e2b94.dir/build.make:78: CMakeFiles/cmTC_e2b94.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_e2b94/fast] Error 2
+
+
+File /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _uitoa
+  return ((int*)(&_uitoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _ultoa exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c9caa/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c9caa.dir/build.make CMakeFiles/cmTC_c9caa.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c9caa.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_c9caa.dir/CheckSymbolExists.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_ultoa’ undeclared (first use in this function)
+   14 |   return ((int*)(&_ultoa))[argc];
+      |                   ^~~~~~
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_c9caa.dir/build.make:78: CMakeFiles/cmTC_c9caa.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_c9caa/fast] Error 2
+
+
+File /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _ultoa
+  return ((int*)(&_ultoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _i64toa exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_78aa1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_78aa1.dir/build.make CMakeFiles/cmTC_78aa1.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_78aa1.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_78aa1.dir/CheckSymbolExists.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_i64toa’ undeclared (first use in this function)
+   14 |   return ((int*)(&_i64toa))[argc];
+      |                   ^~~~~~~
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_78aa1.dir/build.make:78: CMakeFiles/cmTC_78aa1.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_78aa1/fast] Error 2
+
+
+File /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _i64toa
+  return ((int*)(&_i64toa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _ui64toa exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_73afd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_73afd.dir/build.make CMakeFiles/cmTC_73afd.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_73afd.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_73afd.dir/CheckSymbolExists.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_ui64toa’ undeclared (first use in this function)
+   14 |   return ((int*)(&_ui64toa))[argc];
+      |                   ^~~~~~~~
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_73afd.dir/build.make:78: CMakeFiles/cmTC_73afd.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_73afd/fast] Error 2
+
+
+File /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _ui64toa
+  return ((int*)(&_ui64toa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _stricmp exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b6260/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b6260.dir/build.make CMakeFiles/cmTC_b6260.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b6260.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_b6260.dir/CheckSymbolExists.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_stricmp’ undeclared (first use in this function); did you mean ‘strncmp’?
+   14 |   return ((int*)(&_stricmp))[argc];
+      |                   ^~~~~~~~
+      |                   strncmp
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_b6260.dir/build.make:78: CMakeFiles/cmTC_b6260.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_b6260/fast] Error 2
+
+
+File /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _stricmp
+  return ((int*)(&_stricmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strnicmp exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_00a96/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_00a96.dir/build.make CMakeFiles/cmTC_00a96.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_00a96.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_00a96.dir/CheckSymbolExists.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_strnicmp’ undeclared (first use in this function); did you mean ‘strncmp’?
+   14 |   return ((int*)(&_strnicmp))[argc];
+      |                   ^~~~~~~~~
+      |                   strncmp
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_00a96.dir/build.make:78: CMakeFiles/cmTC_00a96.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_00a96/fast] Error 2
+
+
+File /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strnicmp
+  return ((int*)(&_strnicmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _wcsdup exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_03300/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_03300.dir/build.make CMakeFiles/cmTC_03300.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_03300.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_03300.dir/CheckSymbolExists.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_wcsdup’ undeclared (first use in this function); did you mean ‘wcsdup’?
+   14 |   return ((int*)(&_wcsdup))[argc];
+      |                   ^~~~~~~
+      |                   wcsdup
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_03300.dir/build.make:78: CMakeFiles/cmTC_03300.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_03300/fast] Error 2
+
+
+File /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _wcsdup
+  return ((int*)(&_wcsdup))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the wcslcat exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_87749/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_87749.dir/build.make CMakeFiles/cmTC_87749.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_87749.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_87749.dir/CheckSymbolExists.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘wcslcat’ undeclared (first use in this function); did you mean ‘wcsncat’?
+   14 |   return ((int*)(&wcslcat))[argc];
+      |                   ^~~~~~~
+      |                   wcsncat
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_87749.dir/build.make:78: CMakeFiles/cmTC_87749.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_87749/fast] Error 2
+
+
+File /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef wcslcat
+  return ((int*)(&wcslcat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the wcslcpy exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e4b98/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e4b98.dir/build.make CMakeFiles/cmTC_e4b98.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e4b98.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_e4b98.dir/CheckSymbolExists.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘wcslcpy’ undeclared (first use in this function); did you mean ‘wcsncpy’?
+   14 |   return ((int*)(&wcslcpy))[argc];
+      |                   ^~~~~~~
+      |                   wcsncpy
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_e4b98.dir/build.make:78: CMakeFiles/cmTC_e4b98.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_e4b98/fast] Error 2
+
+
+File /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef wcslcpy
+  return ((int*)(&wcslcpy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _wcsicmp exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_803e9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_803e9.dir/build.make CMakeFiles/cmTC_803e9.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_803e9.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_803e9.dir/CheckSymbolExists.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_wcsicmp’ undeclared (first use in this function); did you mean ‘wcsncmp’?
+   14 |   return ((int*)(&_wcsicmp))[argc];
+      |                   ^~~~~~~~
+      |                   wcsncmp
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_803e9.dir/build.make:78: CMakeFiles/cmTC_803e9.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_803e9/fast] Error 2
+
+
+File /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _wcsicmp
+  return ((int*)(&_wcsicmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _wcsnicmp exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3c1c0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3c1c0.dir/build.make CMakeFiles/cmTC_3c1c0.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3c1c0.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_3c1c0.dir/CheckSymbolExists.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_wcsnicmp’ undeclared (first use in this function); did you mean ‘wcsncmp’?
+   14 |   return ((int*)(&_wcsnicmp))[argc];
+      |                   ^~~~~~~~~
+      |                   wcsncmp
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_3c1c0.dir/build.make:78: CMakeFiles/cmTC_3c1c0.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_3c1c0/fast] Error 2
+
+
+File /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _wcsnicmp
+  return ((int*)(&_wcsnicmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the fopen64 exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a9645/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a9645.dir/build.make CMakeFiles/cmTC_a9645.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a9645.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_a9645.dir/CheckSymbolExists.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘fopen64’ undeclared (first use in this function); did you mean ‘fopen’?
+   14 |   return ((int*)(&fopen64))[argc];
+      |                   ^~~~~~~
+      |                   fopen
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_a9645.dir/build.make:78: CMakeFiles/cmTC_a9645.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_a9645/fast] Error 2
+
+
+File /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fopen64
+  return ((int*)(&fopen64))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the fseeko64 exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_acb3e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_acb3e.dir/build.make CMakeFiles/cmTC_acb3e.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_acb3e.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_acb3e.dir/CheckSymbolExists.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘fseeko64’ undeclared (first use in this function); did you mean ‘fseeko’?
+   14 |   return ((int*)(&fseeko64))[argc];
+      |                   ^~~~~~~~
+      |                   fseeko
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_acb3e.dir/build.make:78: CMakeFiles/cmTC_acb3e.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_acb3e/fast] Error 2
+
+
+File /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fseeko64
+  return ((int*)(&fseeko64))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sysctlbyname exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ab1e7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ab1e7.dir/build.make CMakeFiles/cmTC_ab1e7.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ab1e7.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_ab1e7.dir/CheckSymbolExists.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:10: fatal error: sys/sysctl.h: No such file or directory
+    3 | #include <sys/sysctl.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_ab1e7.dir/build.make:78: CMakeFiles/cmTC_ab1e7.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_ab1e7/fast] Error 2
+
+
+File /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/types.h>
+#include <sys/sysctl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sysctlbyname
+  return ((int*)(&sysctlbyname))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the elf_aux_info exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5e040/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5e040.dir/build.make CMakeFiles/cmTC_5e040.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5e040.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_5e040.dir/CheckSymbolExists.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘elf_aux_info’ undeclared (first use in this function)
+    8 |   return ((int*)(&elf_aux_info))[argc];
+      |                   ^~~~~~~~~~~~
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_5e040.dir/build.make:78: CMakeFiles/cmTC_5e040.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_5e040/fast] Error 2
+
+
+File /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/auxv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef elf_aux_info
+  return ((int*)(&elf_aux_info))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function iconv_open exists in the iconv failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e0978/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e0978.dir/build.make CMakeFiles/cmTC_e0978.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e0978.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos" -DCHECK_FUNCTION_EXISTS=iconv_open -o CMakeFiles/cmTC_e0978.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e0978
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e0978.dir/link.txt --verbose=1
+/usr/bin/cc  -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos" -DCHECK_FUNCTION_EXISTS=iconv_open -rdynamic CMakeFiles/cmTC_e0978.dir/CheckFunctionExists.c.o -o cmTC_e0978  -liconv 
+/usr/bin/ld: cannot find -liconv: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_e0978.dir/build.make:99: cmTC_e0978] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_e0978/fast] Error 2
+
+
+
+Determining if the alloca exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6ebe4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6ebe4.dir/build.make CMakeFiles/cmTC_6ebe4.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6ebe4.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_6ebe4.dir/CheckSymbolExists.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘alloca’ undeclared (first use in this function); did you mean ‘valloc’?
+    8 |   return ((int*)(&alloca))[argc];
+      |                   ^~~~~~
+      |                   valloc
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_6ebe4.dir/build.make:78: CMakeFiles/cmTC_6ebe4.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_6ebe4/fast] Error 2
+
+
+File /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef alloca
+  return ((int*)(&alloca))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file alsa/asoundlib.h exists failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_66502/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_66502.dir/build.make CMakeFiles/cmTC_66502.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_66502.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_66502.dir/CheckIncludeFile.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: alsa/asoundlib.h: No such file or directory
+    1 | #include <alsa/asoundlib.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_66502.dir/build.make:78: CMakeFiles/cmTC_66502.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_66502/fast] Error 2
+
+
+
+Determining if the include file audio/audiolib.h exists failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b7f09/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b7f09.dir/build.make CMakeFiles/cmTC_b7f09.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b7f09.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_b7f09.dir/CheckIncludeFile.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: audio/audiolib.h: No such file or directory
+    1 | #include <audio/audiolib.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_b7f09.dir/build.make:78: CMakeFiles/cmTC_b7f09.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_b7f09/fast] Error 2
+
+
+
+Determining if the include file sndio.h exists failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_65817/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_65817.dir/build.make CMakeFiles/cmTC_65817.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_65817.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_65817.dir/CheckIncludeFile.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: sndio.h: No such file or directory
+    1 | #include <sndio.h>
+      |          ^~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_65817.dir/build.make:78: CMakeFiles/cmTC_65817.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_65817/fast] Error 2
+
+
+
+Determining if the include file samplerate.h exists failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fa1bd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fa1bd.dir/build.make CMakeFiles/cmTC_fa1bd.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fa1bd.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_fa1bd.dir/CheckIncludeFile.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: samplerate.h: No such file or directory
+    1 | #include <samplerate.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_fa1bd.dir/build.make:78: CMakeFiles/cmTC_fa1bd.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_fa1bd/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_RPI failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_78676/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_78676.dir/build.make CMakeFiles/cmTC_78676.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_78676.dir/src.c.o
+/usr/bin/cc -DHAVE_RPI  -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -I/opt/vc/include/interface/vmcs_host/linux/ -I/opt/vc/include/interface/vcos/pthreads -I/opt/vc/include  -L/opt/vc/lib -o CMakeFiles/cmTC_78676.dir/src.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: bcm_host.h: No such file or directory
+    2 |         #include <bcm_host.h>
+      |                  ^~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_78676.dir/build.make:78: CMakeFiles/cmTC_78676.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_78676/fast] Error 2
+
+
+Source file was:
+
+        #include <bcm_host.h>
+        #include <EGL/eglplatform.h>
+        int main(int argc, char **argv) {
+          EGL_DISPMANX_WINDOW_T window;
+          bcm_host_init();
+        }
+Determining if the include file X11/Xcursor/Xcursor.h exists failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_72491/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_72491.dir/build.make CMakeFiles/cmTC_72491.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_72491.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_72491.dir/CheckIncludeFile.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: X11/Xcursor/Xcursor.h: No such file or directory
+    1 | #include <X11/Xcursor/Xcursor.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_72491.dir/build.make:78: CMakeFiles/cmTC_72491.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_72491/fast] Error 2
+
+
+
+Determining if the include file X11/extensions/Xinerama.h exists failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1b152/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1b152.dir/build.make CMakeFiles/cmTC_1b152.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1b152.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_1b152.dir/CheckIncludeFile.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: X11/extensions/Xinerama.h: No such file or directory
+    1 | #include <X11/extensions/Xinerama.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_1b152.dir/build.make:78: CMakeFiles/cmTC_1b152.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_1b152/fast] Error 2
+
+
+
+Determining if the include file X11/extensions/XInput2.h exists failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f24f7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f24f7.dir/build.make CMakeFiles/cmTC_f24f7.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f24f7.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_f24f7.dir/CheckIncludeFile.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: X11/extensions/XInput2.h: No such file or directory
+    1 | #include <X11/extensions/XInput2.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_f24f7.dir/build.make:78: CMakeFiles/cmTC_f24f7.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_f24f7/fast] Error 2
+
+
+
+Determining if the include file X11/extensions/Xrandr.h exists failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5e1b4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5e1b4.dir/build.make CMakeFiles/cmTC_5e1b4.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5e1b4.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_5e1b4.dir/CheckIncludeFile.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: X11/extensions/Xrandr.h: No such file or directory
+    1 | #include <X11/extensions/Xrandr.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_5e1b4.dir/build.make:78: CMakeFiles/cmTC_5e1b4.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_5e1b4/fast] Error 2
+
+
+
+Determining if the include file X11/extensions/Xfixes.h exists failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d7f5e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d7f5e.dir/build.make CMakeFiles/cmTC_d7f5e.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d7f5e.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_d7f5e.dir/CheckIncludeFile.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: X11/extensions/Xfixes.h: No such file or directory
+    1 | #include <X11/extensions/Xfixes.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_d7f5e.dir/build.make:78: CMakeFiles/cmTC_d7f5e.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_d7f5e/fast] Error 2
+
+
+
+Determining if the include file X11/extensions/Xrender.h exists failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1c583/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1c583.dir/build.make CMakeFiles/cmTC_1c583.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1c583.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_1c583.dir/CheckIncludeFile.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: X11/extensions/Xrender.h: No such file or directory
+    1 | #include <X11/extensions/Xrender.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_1c583.dir/build.make:78: CMakeFiles/cmTC_1c583.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_1c583/fast] Error 2
+
+
+
+Determining if the include file X11/extensions/scrnsaver.h exists failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bd07e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bd07e.dir/build.make CMakeFiles/cmTC_bd07e.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bd07e.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_bd07e.dir/CheckIncludeFile.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: X11/extensions/scrnsaver.h: No such file or directory
+    1 | #include <X11/extensions/scrnsaver.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_bd07e.dir/build.make:78: CMakeFiles/cmTC_bd07e.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_bd07e/fast] Error 2
+
+
+
+Determining if the include file X11/extensions/shape.h exists failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cdbc7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cdbc7.dir/build.make CMakeFiles/cmTC_cdbc7.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cdbc7.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_cdbc7.dir/CheckIncludeFile.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: X11/extensions/shape.h: No such file or directory
+    1 | #include <X11/extensions/shape.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_cdbc7.dir/build.make:78: CMakeFiles/cmTC_cdbc7.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_cdbc7/fast] Error 2
+
+
+
+Determining if files X11/Xlib.h;X11/extensions/Xdbe.h exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e428b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e428b.dir/build.make CMakeFiles/cmTC_e428b.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e428b.dir/HAVE_XDBE_H.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_e428b.dir/HAVE_XDBE_H.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_XDBE_H.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_XDBE_H.c:2:10: fatal error: X11/Xlib.h: No such file or directory
+    2 | #include <X11/Xlib.h>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_e428b.dir/build.make:78: CMakeFiles/cmTC_e428b.dir/HAVE_XDBE_H.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_e428b/fast] Error 2
+
+
+Source:
+/* */
+#include <X11/Xlib.h>
+#include <X11/extensions/Xdbe.h>
+
+
+int main(void){return 0;}
+
+Determining if files X11/Xlib.h;X11/extensions/xf86vmode.h exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_08186/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_08186.dir/build.make CMakeFiles/cmTC_08186.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_08186.dir/HAVE_XF86VM_H.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_08186.dir/HAVE_XF86VM_H.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_XF86VM_H.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_XF86VM_H.c:2:10: fatal error: X11/Xlib.h: No such file or directory
+    2 | #include <X11/Xlib.h>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_08186.dir/build.make:78: CMakeFiles/cmTC_08186.dir/HAVE_XF86VM_H.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_08186/fast] Error 2
+
+
+Source:
+/* */
+#include <X11/Xlib.h>
+#include <X11/extensions/xf86vmode.h>
+
+
+int main(void){return 0;}
+
+Determining if files X11/Xlib.h;X11/Xproto.h;X11/extensions/Xext.h exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c511e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c511e.dir/build.make CMakeFiles/cmTC_c511e.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c511e.dir/HAVE_XEXT_H.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"  -o CMakeFiles/cmTC_c511e.dir/HAVE_XEXT_H.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_XEXT_H.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_XEXT_H.c:2:10: fatal error: X11/Xlib.h: No such file or directory
+    2 | #include <X11/Xlib.h>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_c511e.dir/build.make:78: CMakeFiles/cmTC_c511e.dir/HAVE_XEXT_H.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_c511e/fast] Error 2
+
+
+Source:
+/* */
+#include <X11/Xlib.h>
+#include <X11/Xproto.h>
+#include <X11/extensions/Xext.h>
+
+
+int main(void){return 0;}
+
+Performing C SOURCE FILE Test HAVE_OPENGL_GLX failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6a69a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6a69a.dir/build.make CMakeFiles/cmTC_6a69a.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6a69a.dir/src.c.o
+/usr/bin/cc -DHAVE_OPENGL_GLX  -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"   -o CMakeFiles/cmTC_6a69a.dir/src.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: GL/glx.h: No such file or directory
+    2 |         #include <GL/glx.h>
+      |                  ^~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_6a69a.dir/build.make:78: CMakeFiles/cmTC_6a69a.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_6a69a/fast] Error 2
+
+
+Source file was:
+
+        #include <GL/glx.h>
+        int main(int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_OPENGL failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a8581/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a8581.dir/build.make CMakeFiles/cmTC_a8581.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a8581.dir/src.c.o
+/usr/bin/cc -DHAVE_OPENGL  -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"   -o CMakeFiles/cmTC_a8581.dir/src.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: GL/gl.h: No such file or directory
+    2 |         #include <GL/gl.h>
+      |                  ^~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_a8581.dir/build.make:78: CMakeFiles/cmTC_a8581.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_a8581/fast] Error 2
+
+
+Source file was:
+
+        #include <GL/gl.h>
+        #include <GL/glext.h>
+        int main(int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_OPENGLES_V1 failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_197ae/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_197ae.dir/build.make CMakeFiles/cmTC_197ae.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_197ae.dir/src.c.o
+/usr/bin/cc -DHAVE_OPENGLES_V1  -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"   -o CMakeFiles/cmTC_197ae.dir/src.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: GLES/gl.h: No such file or directory
+    2 |         #include <GLES/gl.h>
+      |                  ^~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_197ae.dir/build.make:78: CMakeFiles/cmTC_197ae.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_197ae/fast] Error 2
+
+
+Source file was:
+
+        #include <GLES/gl.h>
+        #include <GLES/glext.h>
+        int main (int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIVANTE_VDK failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d8df8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d8df8.dir/build.make CMakeFiles/cmTC_d8df8.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d8df8.dir/src.c.o
+/usr/bin/cc -DHAVE_VIVANTE_VDK  -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"   -o CMakeFiles/cmTC_d8df8.dir/src.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: gc_vdk.h: No such file or directory
+    2 |         #include <gc_vdk.h>
+      |                  ^~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_d8df8.dir/build.make:78: CMakeFiles/cmTC_d8df8.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_d8df8/fast] Error 2
+
+
+Source file was:
+
+        #include <gc_vdk.h>
+        int main(int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIVANTE_EGL_FB failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_492f8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_492f8.dir/build.make CMakeFiles/cmTC_492f8.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_492f8.dir/src.c.o
+/usr/bin/cc -DHAVE_VIVANTE_EGL_FB  -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"   -o CMakeFiles/cmTC_492f8.dir/src.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:4:18: fatal error: EGL/eglvivante.h: No such file or directory
+    4 |         #include <EGL/eglvivante.h>
+      |                  ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_492f8.dir/build.make:78: CMakeFiles/cmTC_492f8.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_492f8/fast] Error 2
+
+
+Source file was:
+
+        #define LINUX
+        #define EGL_API_FB
+        #include <EGL/eglvivante.h>
+        int main(int argc, char** argv) {}
+Determining if the include file libudev.h exists failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1a974/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1a974.dir/build.make CMakeFiles/cmTC_1a974.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1a974.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"   -o CMakeFiles/cmTC_1a974.dir/CheckIncludeFile.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: libudev.h: No such file or directory
+    1 | #include <libudev.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_1a974.dir/build.make:78: CMakeFiles/cmTC_1a974.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_1a974/fast] Error 2
+
+
+
+Determining if files pthread_np.h exist failed with the following output:
+Change Dir: /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_dba70/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_dba70.dir/build.make CMakeFiles/cmTC_dba70.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dba70.dir/HAVE_PTHREAD_NP_H.c.o
+/usr/bin/cc   -idirafter "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/src/video/khronos"   -D_REENTRANT -pthread -o CMakeFiles/cmTC_dba70.dir/HAVE_PTHREAD_NP_H.c.o -c /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_PTHREAD_NP_H.c
+/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_PTHREAD_NP_H.c:2:10: fatal error: pthread_np.h: No such file or directory
+    2 | #include <pthread_np.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_dba70.dir/build.make:78: CMakeFiles/cmTC_dba70.dir/HAVE_PTHREAD_NP_H.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_dba70/fast] Error 2
+
+
+Source:
+/* */
+#include <pthread_np.h>
+
+
+int main(void){return 0;}
+

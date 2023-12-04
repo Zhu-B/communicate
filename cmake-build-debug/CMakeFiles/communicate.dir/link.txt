@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/communicate.dir/main.cpp.o CMakeFiles/communicate.dir/lib/src/setup.cpp.o -o communicate  libportaudio.a 
+/usr/bin/c++ -g CMakeFiles/communicate.dir/main.cpp.o CMakeFiles/communicate.dir/lib/src/setup.cpp.o -o communicate  _deps/sdl2-build/libSDL2maind.a _deps/sdl2-build/libSDL2d.a -lSDL2_image-static -lm -lrt -Wl,--no-undefined -pthread 

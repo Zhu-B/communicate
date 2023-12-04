@@ -108,7 +108,8 @@ communicate_EXTERNAL_OBJECTS =
 communicate: CMakeFiles/communicate.dir/main.cpp.o
 communicate: CMakeFiles/communicate.dir/lib/src/setup.cpp.o
 communicate: CMakeFiles/communicate.dir/build.make
-communicate: libportaudio.a
+communicate: _deps/sdl2-build/libSDL2maind.a
+communicate: _deps/sdl2-build/libSDL2d.a
 communicate: CMakeFiles/communicate.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable communicate"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/communicate.dir/link.txt --verbose=$(VERBOSE)

@@ -14,7 +14,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/portaudio.dir/DependInfo.cmake"
+  "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-build/CMakeFiles/SDL2main.dir/DependInfo.cmake"
+  "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-build/CMakeFiles/SDL2-static.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

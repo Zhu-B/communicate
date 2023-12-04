@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/c/Users/zbx86/Desktop/cs3520/communicate/portaudio/include -I/mnt/c/Users/zbx86/Desktop/cs3520/communicate/SDL-release-2.28.5/include -I/mnt/c/Users/zbx86/Desktop/cs3520/communicate/lib/include
+CXX_INCLUDES = -I/mnt/c/Users/zbx86/Desktop/cs3520/communicate/portaudio/include -I/mnt/c/Users/zbx86/Desktop/cs3520/communicate/SDL-release-2.28.5/include -I/mnt/c/Users/zbx86/Desktop/cs3520/communicate/lib/include -I/mnt/c/Users/zbx86/Desktop/cs3520/communicate/include -I/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/_deps/sdl2-src/include
 
 CXX_FLAGS = -g
 
