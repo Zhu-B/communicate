@@ -1,4 +1,15 @@
 # ninja log v5
-1	555	7231760453023072	CMakeFiles/communicate.dir/main.cpp.obj	d974fcd3d4c246d
-243	307	7231760334067251	communicate.exe	9b9b1dfb3d806740
-1	107	7231760513330233	build.ninja	88a694f5f18a440a
+2	207	7233464121557267	CMakeFiles/communicate.dir/main.cpp.obj	d974fcd3d4c246d
+207	260	7233464122058168	communicate.exe	9b9b1dfb3d806740
+0	77	7233467070930723	build.ninja	88a694f5f18a440a
+0	94	7233467070930723	build.ninja	88a694f5f18a440a
+2	27	7233467071677507	CMakeFiles/communicate.dir/lib/src/setup.cpp.obj	a309630f84b82a5b
+4	202	7233467073414930	CMakeFiles/communicate.dir/main.cpp.obj	dfbae537067e7ffe
+202	259	7233467073971479	communicate.exe	e83e35d103b65595
+2	226	7233587866388059	CMakeFiles/communicate.dir/main.cpp.obj	dfbae537067e7ffe
+2	205	7233590122665250	CMakeFiles/communicate.dir/main.cpp.obj	dfbae537067e7ffe
+205	257	7233590123184508	communicate.exe	e83e35d103b65595
+2	214	7233590200318534	CMakeFiles/communicate.dir/main.cpp.obj	dfbae537067e7ffe
+1	209	7233590780952240	CMakeFiles/communicate.dir/main.cpp.obj	dfbae537067e7ffe
+2	209	7233590833905291	CMakeFiles/communicate.dir/main.cpp.obj	dfbae537067e7ffe
+209	259	7233590834380373	communicate.exe	e83e35d103b65595

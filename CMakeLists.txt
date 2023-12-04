@@ -11,4 +11,10 @@ include_directories("${CMAKE_CURRENT_SOURCE_DIR}/portaudio/include")
 find_library(SDL-release-2.28.5 PATHS "${CMAKE_CURRENT_SOURCE_DIR}/SDL-release-2.28.5/include")
 include_directories("${CMAKE_CURRENT_SOURCE_DIR}/SDL-release-2.28.5/include")
 
-add_executable(${CMAKE_PROJECT_NAME} main.cpp)
+add_executable(${CMAKE_PROJECT_NAME}
+        main.cpp
+        lib/src/setup.cpp
+        lib/include/setup.h
+)
+
+target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE lib/include)

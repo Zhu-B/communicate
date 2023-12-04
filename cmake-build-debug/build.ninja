@@ -52,9 +52,16 @@ build cmake_object_order_depends_target_communicate: phony || CMakeFiles/communi
 build CMakeFiles/communicate.dir/main.cpp.obj: CXX_COMPILER__communicate_unscanned_Debug C$:/Users/Rate/Desktop/cs3520/communicate/main.cpp || cmake_object_order_depends_target_communicate
   DEP_FILE = CMakeFiles\communicate.dir\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Rate/Desktop/cs3520/communicate/portaudio/include -IC:/Users/Rate/Desktop/cs3520/communicate/SDL-release-2.28.5/include
+  INCLUDES = -IC:/Users/Rate/Desktop/cs3520/communicate/portaudio/include -IC:/Users/Rate/Desktop/cs3520/communicate/SDL-release-2.28.5/include -IC:/Users/Rate/Desktop/cs3520/communicate/lib/include
   OBJECT_DIR = CMakeFiles\communicate.dir
   OBJECT_FILE_DIR = CMakeFiles\communicate.dir
+
+build CMakeFiles/communicate.dir/lib/src/setup.cpp.obj: CXX_COMPILER__communicate_unscanned_Debug C$:/Users/Rate/Desktop/cs3520/communicate/lib/src/setup.cpp || cmake_object_order_depends_target_communicate
+  DEP_FILE = CMakeFiles\communicate.dir\lib\src\setup.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Rate/Desktop/cs3520/communicate/portaudio/include -IC:/Users/Rate/Desktop/cs3520/communicate/SDL-release-2.28.5/include -IC:/Users/Rate/Desktop/cs3520/communicate/lib/include
+  OBJECT_DIR = CMakeFiles\communicate.dir
+  OBJECT_FILE_DIR = CMakeFiles\communicate.dir\lib\src
 
 
 # =============================================================================
@@ -64,7 +71,7 @@ build CMakeFiles/communicate.dir/main.cpp.obj: CXX_COMPILER__communicate_unscann
 #############################################
 # Link the executable communicate.exe
 
-build communicate.exe: CXX_EXECUTABLE_LINKER__communicate_Debug CMakeFiles/communicate.dir/main.cpp.obj
+build communicate.exe: CXX_EXECUTABLE_LINKER__communicate_Debug CMakeFiles/communicate.dir/main.cpp.obj CMakeFiles/communicate.dir/lib/src/setup.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\communicate.dir
