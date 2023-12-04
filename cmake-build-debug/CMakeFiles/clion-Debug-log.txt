@@ -1,4 +1,8 @@
-"C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\Rate\Desktop\cs3520\communicate -B C:\Users\Rate\Desktop\cs3520\communicate\cmake-build-debug
--- Configuring done (0.0s)
--- Generating done (0.0s)
--- Build files have been written to: C:/Users/Rate/Desktop/cs3520/communicate/cmake-build-debug
+C:\Windows\system32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S /mnt/c/Users/zbx86/Desktop/cs3520/communicate -B /mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug"
+CMake Error at CMakeLists.txt:21 (target_include_directories):
+  Cannot specify include directories for target "audio" which is not built by
+  this project.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/mnt/c/Users/zbx86/Desktop/cs3520/communicate/cmake-build-debug/CMakeFiles/CMakeOutput.log".

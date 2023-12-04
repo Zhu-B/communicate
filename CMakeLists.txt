@@ -18,3 +18,6 @@ add_executable(${CMAKE_PROJECT_NAME}
 )
 
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE lib/include)
+add_library(portaudio portaudio/src/common)
+target_include_directories(portaudio PRIVATE portaudio/include portaudio/src/common)
+target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE portaudio)
